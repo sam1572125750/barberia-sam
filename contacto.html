@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contac.css" />
+    <title>Contactos Barberia Alura</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img class="logos-alura" src="imagenes/logo.png" alt="imagen de logo de barberia alura" /></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <h2>RESERVA SU CITA</h2> 
+        </div>
+        
+        <section class="contenedor-general">
+            <section class="formula">
+                <form class="for">
+                    <label for="nombreapellido">Nombres y apellidos:</label>
+                    <input type="text" id="nombreapellido" class="patron" required />
+        
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" id="correo" class="patron" required placeholder="survivor20@gmail.com" />
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" class="patron" required placeholder="995269545" />
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="" class="patron" id="mensajes" cols="70" rows="10" required></textarea>
+                    <fieldset>
+                        <!-- ayuda agrupar el "fieldset" y el navegador lo reconoce-->
+                        <legend>¿Como le gustaria que le contactemos?</legend>
+                            <label for="ra-email"><input type="radio" name="contacto" id="ra-email"
+                                    value="email" />Email</label>
+        
+                            <label for="ra-telefono"><input type="radio" name="contacto" id="ra-telefono"
+                                    value="telefono" />Telefono</label>
+        
+                            <label for="ra-wassap"><input type="radio" name="contacto" id="ra-wassap" value="wassap"
+                                    checked />Whassap</label>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>¿En cual Horario prefiere ser atendido?</legend>
+                        <select>
+                            <option value="">Mañana</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noche</option>
+                        </select>
+                    </fieldset>
+                    <label><input class="check" type="checkbox" checked />¿le gustaria recibir
+                        novedades?</label>
+                    <input type="submit" value="Enviar formulario" class="enviar" onclick="compras10()" />
+                </form> 
+            </section>
+           
+            <article class="imag">
+                <img class="logo-sesion" src="imagenes/barba-modelo.png" alt="">
+            </article>
+        </section>
+        
+        <section class="medio">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lunes</td>
+                        <td>08:00 h - 20:00h</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Martes</td>
+                        <td>08:00 h - 20:00h</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Miercoles </td>
+                        <td>08:00 h - 20:00h</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <img class="logos-alura" src="imagenes/logo-blanco.png" alt="imagen de logo de barberia alura" />
+        <p class="copyright">&copy Copyright Barbería Alura - 2024</p>
+    </footer>
+    <script src="mensaje.js"></script>
+</body>
+
+</html>
